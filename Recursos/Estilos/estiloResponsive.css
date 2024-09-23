@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+
+/* Variables para los colores */
+:root{
+  --main-red: #6a040f;
+  --main-redlight: #910904;
+  --main-black: #06071e;
+  --main-blackoff:#04040f;
+  --main-orange:#dc2f02;
+  --main-white: #aaaca1;
+  --main-yellow: #ffba08;
+  --main-mangoo: #f48c06;
+}
+
+*{
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.nav{
+  z-index: 1; /* Se muestra por delante de todos los objetos */
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  background-color: var(--main-yellow);
+}
+
+.nav a{
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 10vh;
+  padding: 10px;
+  display: block;
+  color: var(--main-blackoff);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.0em;
+  font-weight: bolder;
+}
+
+.nav a:hover{
+  background-color: var(--main-black);
+  color: var(--main-yellow);
+}
+
+.nav-list{
+  display: flex;
+  justify-content: center;
+}
+
+ul{
+  list-style: none;
+}
+
+#nombre{
+  color: var(--main-redlight);
+}
+
+.brandon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-black);
+}
+
+.download{
+  border-radius: 50px;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  height: 6vh;
+  margin: 4% 0 4%  0;
+  background-image: linear-gradient(100deg, var(--main-redlight) 10%, var(--main-red) 100%);
+  color: white;  
+  font-size: 20px;
+}
+
+.download:hover{
+  transform: scale(1.03);
+  background-image: linear-gradient(100deg, var(--main-red) 100%, var(--main-redlight) 10%);
+}
+
+i{
+  display: flex;
+  color:white;
+  font-size: 32px;
+}
+
+i:hover{
+  color: var(--main-yellow);
+  transform: scale(1.15);
+}
+
+.brandon img{
+  border-radius: 50%;
+  margin-right: 80px;
+  padding: 50px;
+}
+
+h1{
+  font-size: 50px;
+  margin-bottom: 4%;
+  color: white;
+}
+
+.brandon h2{
+  color: var(--main-yellow);
+  margin-bottom: 4%;
+  font-size: 25px;
+}
+
+h3{
+  font-size: 20px;
+  color: white;
+}
+
+.social{
+  color: var(--main-white);
+  font-weight: bolder;
+}
+
+section{
+  display: block;
+  height: 100vh;
+  padding: 10%;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-section{
+  font-size: 50px;
+  font-weight: bolder;
+  color: var(--main-yellow);
+  margin-bottom : 4%;
+}
+
+.about_me p{
+  font-size: 120%;
+  padding-bottom: 40px;
+  font-weight: bolder;
+}
+
+.about_me a{
+  text-decoration: none;
+  color: var(--main-yellow);
+}
+
+.about_me a:hover{
+  color: var(--main-redlight);
+  
+}
+
+@keyframes animacion_link {
+  0%{
+    background-color: black;
+  }
+  100%{
+    background-color: rosybrown;
+  }
+}
+
+.portfolio-projects{
+  background-image: linear-gradient(100deg, var(--main-blackoff) 10%, var(--main-black) 100%);
+}
+
+.projects-grid{
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap:20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card h3{
+  color: var(--main-redlight);
+  font-weight: bolder;
+  font-size: 25px;
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px lrgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card:hover img {
+  filter: brightness(0.2);
+}
+
+.card p {
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.02);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  z-index: 1;
+  transition: opacity 0.3s ease;
+  border-radius: 5px;
+}
+
+.education-grid{
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.education h3{
+  font-size: 25px;
+  color: var(--main-black);
+}
+
+.skills{
+  background: linear-gradient(100deg, var(--main-blackoff) 10%, var(--main-black) 100%);
+}
+
+.lenguages{
+  display: grid;
+  grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.lenguages i{
+  font-size: 100px;
+}
+
+.skills h3{
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.list-contact{
+  display: block;
+  border: 1px solid black;
+  width: 50%;
+  background:linear-gradient(100deg, var(--main-blackoff)20%, var(--main-black) 100%);
+  padding: 40px 0px 40px 40px;
+  border-radius: 10px 1000px 10px 10px;
+  color: white;
+}
+
+.contact h3{
+  color: var(--main-black);
+  margin-bottom: 30px;
+  font-size: 25px;
+}
+
+.list-contact i{
+  font-size: 60px;
+  padding: 20px 0 20px 0;
+}
+
+.list-contact a{
+  padding-left: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+/* Estilos generales para pantallas pequeñas y medianas */
+@media (max-width: 768px) {
+    .nav a {
+      font-size: 0.8em;
+      padding: 8px;
+    }
+    
+    .brandon img {
+      margin-right: 20px;
+      padding: 20px;
+    }
+    
+    h1 {
+      font-size: 36px;
+    }
+    
+    .brandon h2 {
+      font-size: 18px;
+    }
+    
+    h3 {
+      font-size: 16px;
+    }
+    
+    .projects-grid, .education-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    
+    .list-contact {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  
+  /* Estilos para dispositivos muy pequeños, como móviles */
+  @media (max-width: 480px) {
+    .nav {
+      flex-direction: column;
+    }
+    
+    .nav-list {
+      display: block;
+    }
+    
+    .nav a {
+      font-size: 1.2em;
+      padding: 12px;
+    }
+    
+    .brandon {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .brandon img {
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    
+    h1 {
+      font-size: 28px;
+    }
+    
+    .brandon h2 {
+      font-size: 16px;
+    }
+    
+    .card h3 {
+      font-size: 20px;
+    }
+    
+    .card p {
+      font-size: 14px;
+    }
+    
+    .list-contact {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  /* Estilos para el botón de menú en pantallas pequeñas */
+.nav-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: var(--main-blackoff);
+  }
+  
+  /* Mostrar el botón de menú solo en pantallas pequeñas */
+  @media (max-width: 768px) {
+    .nav {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: var(--main-yellow);
+      z-index: 2;
+    }
+    
+    .nav-toggle {
+      display: block;
+    }
+    
+    .nav.active {
+      display: flex;
+    }
+  }
+
+  /* Ajustes adicionales para tamaños de fuente */
+html {
+    font-size: 100%; /* Tamaño de fuente base en % para que sea responsive */
+  }
+  
+  h1 {
+    font-size: clamp(24px, 5vw, 50px);
+  }
+  
+  h2 {
+    font-size: clamp(16px, 4vw, 25px);
+  }
+  
+  h3 {
+    font-size: clamp(14px, 3vw, 20px);
+  }
+  
+  p {
+    font-size: clamp(14px, 2.5vw, 18px);
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  button, a {
+    color: var(--main-black);
+  }
+  
+  button:hover, a:hover {
+    color: var(--main-redlight);
+  }
+  
+  /* Mejorar la visibilidad del enfoque para accesibilidad */
+  button:focus, a:focus {
+    outline: 2px solid var(--main-red);
+  }
+
+  
