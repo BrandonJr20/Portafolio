@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Recursos/Estilos/style.css">
+    <link rel="icon" href="Recursos/Imagenes/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.14.0/devicon.min.css">
 
@@ -13,167 +14,158 @@
 
 <body>
 
-    <header>
-        <nav class="nav" id="navbar">
-            <ul class="nav-list">
-                <li><a href="#brandon">Brandon</a></li>
-                <li><a href="#aboutme">Sobre mi</a></li>
+    <main>
 
-                <li><a href="#portfolio">Portafolio</a></li>
-                <li><a href="#education">Educacion</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Añade un botón para el menú en pantallas pequeñas -->
-<button class="nav-toggle" aria-label="Toggle navigation">
-    <i class="fas fa-bars"></i>
-  </button>
-  
-
-    <section id="brandon" class="brandon">
-        <img src="Recursos/Imagenes/Yo.png" alt="Imagen del creador de la pagina">
-        <article>
-            <h1>Hola soy <span id="nombre">Brandon</span></h1>
-            <h2>Soy desarrollador Frontend</h2>
-            <h3>¿Qué tal si vamos por un café?</h3>
-
-            <a href="Recursos/Pdf/CV BRANDON.pdf" download="BrandonCV"><button class="download">Descarga mi
-                    CV</button></a>
-
-            <br>
-            <a href="#"><i class="fab fa-twitter"></i> <span class="social">Twitter</span></a>
-            <a href="#"><i class="fab fa-linkedin"></i> <span class="social">Linkedin</span></a>
-            <a href="#">
-                <i class="fab fa-github"></i> <span class="social">GitHub</span>
-            </a>
-        </article>
-    </section>
-
-
-
-    <section id="aboutme" class="about_me">
-        <h2 class="title-section">SOBRE MI</h2>
-        <p>Empece mi carrera en el mundo laboral trabajando como auxiliar de maestro a los 16 años, actualmente tengo 20
-            años y sigo ejerciendo como maestro de computacion en nivel medio, aunque estoy enfocado en cambiar de aires
-            al desarrollo web, desde el finales de 2023 he trabajado en varios proyectos personales con el objetivo de
-            seguir aprendiendo y especializarme.</p>
-
-        <p>Hoy en día estoy cursando el 8vo semestre de la universidad como estudiante de Ingenieria en sistemas y busco
-            ampliar mi campo laboral en el mundo del desarrolo web</p>
-
-        <p>Puedes contactarme a traves de <a href="#">correo electronico</a></p>
-
-    </section>
-    <section id="portfolio" class="portfolio-projects">
-        <h2 class="title-section">PORTAFOLIO</h2>
-
-        <div class="projects-grid">
-            <div class="card" data-static="Recursos/Imagenes/yo2.jpg" data-gif="Recursos/Imagenes/yo2.gif">
-                <a href="Pokedex.html">
-                    <h3>LANDING PAGE</h3>
-                    <p>Este proyecto lo elabore hace 2 meses</p>
+        <header>
+            <!-- Añade un botón para el menú en pantallas pequeñas -->
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav class="nav" id="navbar">
+                <ul class="nav-list">
+                    <li><a href="#brandon">Brandon</a></li>
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#education">Educacion</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+    
+        </header>
+    
+    
+    
+    
+        <section id="brandon" class="brandon">
+            <img src="Recursos/Imagenes/logo.png" alt="Imagen del creador de la pagina">
+            <article>
+                <p class="saludo">Hola soy <span id="nombre">Brandon</span></p>
+                <h2 class="title-section">Soy desarrollador Frontend</h2>
+                <h3>¿Qué tal si vamos por un café?</h3>
+    
+                <a href="Recursos/Pdf/CV BRANDON.pdf" download="BrandonCV"><button class="download">Descarga mi
+                        CV</button></a>
+    
+                <br>
+                <a href="#"><i class="fab fa-twitter"></i> <span class="social">Twitter</span></a>
+                <a href="#"><i class="fab fa-linkedin"></i> <span class="social">Linkedin</span></a>
+                <a href="#">
+                    <i class="fab fa-github"></i> <span class="social">GitHub</span>
+                </a>
+            </article>
+        </section>
+    
+        <section id="portfolio" class="portfolio-projects">
+            <h2 class="title-section">PORTAFOLIO</h2>
+    
+            <div class="projects-grid">
+                <div class="card" data-static="Recursos/Imagenes/yo2.jpg" data-gif="Recursos/Imagenes/yo2.gif">
+                    <a href="Pokedex.html">
+                        <h3>LANDING PAGE</h3>
+                        <p>Este proyecto lo elabore hace 2 meses</p>
+                        <div class="overlay">Ver más.</div>
+                        <img src="Recursos/Imagenes/yo2.jpg" alt="ejemplo imagen 1">
+                    </a>
+                </div>
+                <div class="card" data-static="Recursos/Imagenes/yo2.jpg" data-gif="Recursos/Imagenes/yo2.gif">
+                    <h3>DOCUMENTATION PAGE</h3>
+                    <p>DIABLOS</p>
                     <div class="overlay">Ver más.</div>
                     <img src="Recursos/Imagenes/yo2.jpg" alt="ejemplo imagen 1">
-                </a>
+                </div>
+                <div class="card">
+                    <h3>ONSITE PAGE</h3>
+                    <p></p>
+                </div>
+                <div class="card">
+                    <h3>OTROS PROYECTOS INTERESANTES</h3>
+                    <p></p>
+                </div>
             </div>
-            <div class="card" data-static="Recursos/Imagenes/yo2.jpg" data-gif="Recursos/Imagenes/yo2.gif">
-                <h3>DOCUMENTATION PAGE</h3>
-                <p>DIABLOS</p>
-                <div class="overlay">Ver más.</div>
-                <img src="Recursos/Imagenes/yo2.jpg" alt="ejemplo imagen 1">
             </div>
-            <div class="card">
-                <h3>ONSITE PAGE</h3>
-                <p></p>
+    
+        </section>
+        <section id="education" class="education">
+            <h2 class="title-section">EDUCACION</h2>
+    
+            <div class="education-grid">
+                <div class="card">
+                    <h3>Ingenieria en sistemas</h3>
+                    <p>Universidad Mariano Galvez de Guatemala (2020 - Actualmente)</p>
+                    <a href="#" download="Certificado Html - Css Fibonacci"><button
+                            class="download">PROXIMAMENTE</button></a>
+                </div>
+    
+                <div class="card">
+                    <h3>Desarrollo de aplicaciones web con HTML y CSS</h3>
+                    <p>Academia fibonacci (Noviembre 2023 - Febrero 2024)</p>
+                    <a href="Recursos/Pdf/Certificado INTECAP ANDROID.pdf"
+                        download="Certificado Html - Css Fibonacci"><button class="download">DESCARGA MI
+                            CERTIFICADO</button></a>
+                </div>
+                <div class="card">
+                    <h3>Desarrollo de aplicaciones android + kotlin con Android Studio </h3>
+                    <p>Intecap (Agosto 2021 - Noviembre 2021)</p>
+                    <a href="Recursos/Pdf/Certificado HTML + CSS Academia Fibonacci.pdf"
+                        download="Certificado Html - Css Fibonacci"><button class="download">DESCARGA MI
+                            CERTIFICADO</button></a>
+                </div>
+    
             </div>
-            <div class="card">
-                <h3>OTROS PROYECTOS INTERESANTES</h3>
-                <p></p>
+    
+        </section>
+        <section id="skills" class="skills">
+            <h2 class="title-section">HABILIDADES</h2>
+            <h3 style="font-size: 30px; color: #910904; margin-bottom: 50px;">LENGUAJES DE PROGRAMACION Y SOFTWARE</h3>
+            <div class="lenguages">
+                <div class="icon">
+                    <h3>HTML</h3>
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="icon">
+                    <h3>CSS</h3>
+                    <i class="fab fa-css3-alt"></i>
+                </div>
+                <div class="icon">
+                    <h3>JS</h3>
+                    <i class="fab fa-js-square"></i>
+                </div>
+    
+                <div class="icon">
+                    <h3>VS CODE</h3>
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="icon">
+                    <h3>FIGMA</h3>
+                    <i class="fas fa-paint-brush"></i>
+                </div>
             </div>
-        </div>
-        </div>
+    
+        </section>
+        <section id="contact" class="contact">
+            <h2 class="title-section">CONTACTO</h2>
+            <h3>PUEDES CONTACTARME DE LA SIGUIENTE MANERA</h3>
+            <div class="list-contact">
+                <div class="icon">
+                    <i class="fas fa-phone"></i><a href="#">+502 53441258</a>
+                </div>
+                <div class="icon">
+                    <i class="fab fa-linkedin"></i> <a
+                        href="https://gt.linkedin.com/in/brandon-junior-cortez-vicente-694a25267"
+                        target="_blank">Linkedin</a>
+                </div>
+                <div class="icon">
+                    <i class="fab fa-github"></i> <a href="#" target="_blank">Github</a>
+                </div>
+                <div class="icon">
+                    <i class="fas fa-envelope"></i> <a href="www.gmail.com" target="_blank">Alexander.jncz@gmail.com</a>
+                </div>
+            </div>
+        </section>
 
-    </section>
-    <section id="education" class="education">
-        <h2 class="title-section">EDUCACION</h2>
-
-        <div class="education-grid">
-            <div class="card">
-                <h3>Ingenieria en sistemas</h3>
-                <p>Universidad Mariano Galvez de Guatemala (2020 - Actualmente)</p>
-                <a href="#" download="Certificado Html - Css Fibonacci"><button
-                        class="download">PROXIMAMENTE</button></a>
-            </div>
-
-            <div class="card">
-                <h3>Desarrollo de aplicaciones web con HTML y CSS</h3>
-                <p>Academia fibonacci (Noviembre 2023 - Febrero 2024)</p>
-                <a href="Recursos/Pdf/Certificado INTECAP ANDROID.pdf"
-                    download="Certificado Html - Css Fibonacci"><button class="download">DESCARGA MI
-                        CERTIFICADO</button></a>
-            </div>
-            <div class="card">
-                <h3>Desarrollo de aplicaciones android + kotlin con Android Studio </h3>
-                <p>Intecap (Agosto 2021 - Noviembre 2021)</p>
-                <a href="Recursos/Pdf/Certificado HTML + CSS Academia Fibonacci.pdf"
-                    download="Certificado Html - Css Fibonacci"><button class="download">DESCARGA MI
-                        CERTIFICADO</button></a>
-            </div>
-
-        </div>
-
-    </section>
-    <section id="skills" class="skills">
-        <h2 class="title-section">HABILIDADES</h2>
-        <h3 style="font-size: 30px; color: #910904; margin-bottom: 50px;">LENGUAJES DE PROGRAMACION Y SOFTWARE</h3>
-        <div class="lenguages">
-            <div class="icon">
-                <h3>HTML</h3>
-                <i class="fab fa-html5"></i>
-            </div>
-            <div class="icon">
-                <h3>CSS</h3>
-                <i class="fab fa-css3-alt"></i>
-            </div>
-            <div class="icon">
-                <h3>JS</h3>
-                <i class="fab fa-js-square"></i>
-            </div>
-
-            <div class="icon">
-                <h3>VS CODE</h3>
-                <i class="fas fa-code"></i>
-            </div>
-            <div class="icon">
-                <h3>FIGMA</h3>
-                <i class="fas fa-paint-brush"></i>
-            </div>
-        </div>
-
-    </section>
-    <section id="contact" class="contact">
-        <h2 class="title-section">CONTACTO</h2>
-        <h3>PUEDES CONTACTARME DE LA SIGUIENTE MANERA</h3>
-        <div class="list-contact">
-            <div class="icon">
-                <i class="fas fa-phone"></i><a href="#">+502 53441258</a>
-            </div>
-            <div class="icon">
-                <i class="fab fa-linkedin"></i> <a
-                    href="https://gt.linkedin.com/in/brandon-junior-cortez-vicente-694a25267"
-                    target="_blank">Linkedin</a>
-            </div>
-            <div class="icon">
-                <i class="fab fa-github"></i> <a href="#" target="_blank">Github</a>
-            </div>
-            <div class="icon">
-                <i class="fas fa-envelope"></i> <a href="www.gmail.com" target="_blank">Alexander.jncz@gmail.com</a>
-            </div>
-        </div>
-    </section>
+    </main>
+    
     <script src="Recursos/JS/Vermas.js"></script>
 </body>
 
