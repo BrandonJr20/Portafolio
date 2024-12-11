@@ -14,14 +14,23 @@
 
 <body>
 
+
     <main>
 
         <header>
             <!-- Añade un botón para el menú en pantallas pequeñas -->
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            
+            <div class="options">
+                <img src="Recursos/Imagenes/logo.png" alt="Logo personal">
+
+                <button class="">
+                    <i class="fas fa-moon"></i>
+                </button>
+
+                <button class="nav-toggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
             <nav class="nav" id="navbar">
                 <ul class="nav-list">
                     <li><a href="#brandon">Brandon</a></li>
@@ -31,34 +40,31 @@
                     <li><a href="#contact">Contacto</a></li>
                 </ul>
             </nav>
-    
+
         </header>
-    
-    
-    
-    
-        <section id="brandon" class="brandon">
+
+        <section id="brandon" class="seccion">
             <img src="Recursos/Imagenes/logo.png" alt="Imagen del creador de la pagina">
             <article>
                 <p class="saludo">Hola soy <span id="nombre">Brandon</span></p>
-                <h2 class="title-section">Soy desarrollador Frontend</h2>
+                <div class="title-section"><p>Soy desarrollador Frontend</p> </div>
                 <h3>¿Qué tal si vamos por un café?</h3>
-    
+
                 <a href="Recursos/Pdf/CV BRANDON.pdf" download="BrandonCV"><button class="download">Descarga mi
                         CV</button></a>
-    
+
                 <br>
-                <a href="#"><i class="fab fa-twitter"></i> <span class="social">Twitter</span></a>
-                <a href="#"><i class="fab fa-linkedin"></i> <span class="social">Linkedin</span></a>
-                <a href="#">
-                    <i class="fab fa-github"></i> <span class="social">GitHub</span>
-                </a>
+                <div class="social">
+                    <a href="#"><i class="fab fa-twitter"></i> <span class="social">Twitter</span></a>
+                    <a href="#"><i class="fab fa-linkedin"></i> <span class="social">Linkedin</span></a>
+                    <a href="#"><i class="fab fa-github"></i> <span class="social">GitHub</span></a>
+                </div>
             </article>
         </section>
-    
-        <section id="portfolio" class="portfolio-projects">
+
+        <section id="portfolio" class="seccion">
             <h2 class="title-section">PORTAFOLIO</h2>
-    
+
             <div class="projects-grid">
                 <div class="card" data-static="Recursos/Imagenes/yo2.jpg" data-gif="Recursos/Imagenes/yo2.gif">
                     <a href="Pokedex.html">
@@ -84,11 +90,11 @@
                 </div>
             </div>
             </div>
-    
+
         </section>
-        <section id="education" class="education">
+        <section id="education" class="seccion">
             <h2 class="title-section">EDUCACION</h2>
-    
+
             <div class="education-grid">
                 <div class="card">
                     <h3>Ingenieria en sistemas</h3>
@@ -96,7 +102,7 @@
                     <a href="#" download="Certificado Html - Css Fibonacci"><button
                             class="download">PROXIMAMENTE</button></a>
                 </div>
-    
+
                 <div class="card">
                     <h3>Desarrollo de aplicaciones web con HTML y CSS</h3>
                     <p>Academia fibonacci (Noviembre 2023 - Febrero 2024)</p>
@@ -111,11 +117,11 @@
                         download="Certificado Html - Css Fibonacci"><button class="download">DESCARGA MI
                             CERTIFICADO</button></a>
                 </div>
-    
+
             </div>
-    
+
         </section>
-        <section id="skills" class="skills">
+        <section id="skills" class="seccion">
             <h2 class="title-section">HABILIDADES</h2>
             <h3 style="font-size: 30px; color: #910904; margin-bottom: 50px;">LENGUAJES DE PROGRAMACION Y SOFTWARE</h3>
             <div class="lenguages">
@@ -131,7 +137,7 @@
                     <h3>JS</h3>
                     <i class="fab fa-js-square"></i>
                 </div>
-    
+
                 <div class="icon">
                     <h3>VS CODE</h3>
                     <i class="fas fa-code"></i>
@@ -141,9 +147,9 @@
                     <i class="fas fa-paint-brush"></i>
                 </div>
             </div>
-    
+
         </section>
-        <section id="contact" class="contact">
+        <section id="contact" class="seccion">
             <h2 class="title-section">CONTACTO</h2>
             <h3>PUEDES CONTACTARME DE LA SIGUIENTE MANERA</h3>
             <div class="list-contact">
@@ -165,7 +171,7 @@
         </section>
 
     </main>
-    
+
     <script src="Recursos/JS/Vermas.js"></script>
 </body>
 

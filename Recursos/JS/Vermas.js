@@ -15,6 +15,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  const secciones = document.querySelectorAll('.seccion')
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting){
+          entry.target.classList.add('visible')
+        }
+      })
+    },
+    {
+      threshold:0.5,
+    }
+  )
+
+  secciones.forEach((seccion) => observer.observe(seccion))
+
+
 });
 
 document.querySelector('.nav-toggle').addEventListener('click', function () {
