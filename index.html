@@ -8,6 +8,7 @@
     <link rel="icon" href="Recursos/Imagenes/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.14.0/devicon.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <title>PORTAFOLIO</title>
 </head>
@@ -34,7 +35,7 @@
             <nav class="nav" id="navbar">
                 <ul class="nav-list">
                     <li><a href="#brandon">Brandon</a></li>
-                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#portfolio">Proyectos</a></li>
                     <li><a href="#education">Educacion</a></li>
                     <li><a href="#skills">Habilidades</a></li>
                     <li><a href="#contact">Contacto</a></li>
@@ -46,8 +47,10 @@
         <section id="brandon" class="seccion">
             <img src="Recursos/Imagenes/logo.png" alt="Imagen del creador de la pagina">
             <article>
-                <p class="saludo">Hola soy <span id="nombre">Brandon</span></p>
-                <div class="title-section"><p>Soy desarrollador Frontend</p> </div>
+                <p class="saludo">Hola soy Brandon</p>
+                <div class="title-section">
+                    <p>Soy desarrollador Frontend</p>
+                </div>
                 <h3>¿Qué tal si vamos por un café?</h3>
 
                 <a href="Recursos/Pdf/CV BRANDON.pdf" download="BrandonCV"><button class="download">Descarga mi
@@ -63,67 +66,127 @@
         </section>
 
         <section id="portfolio" class="seccion">
-            <h2 class="title-section">PORTAFOLIO</h2>
 
-            <div class="projects-grid">
-                <div class="card" data-static="Recursos/Imagenes/yo2.jpg" data-gif="Recursos/Imagenes/yo2.gif">
-                    <a href="Pokedex.html">
-                        <h3>LANDING PAGE</h3>
-                        <p>Este proyecto lo elabore hace 2 meses</p>
-                        <div class="overlay">Ver más.</div>
-                        <img src="Recursos/Imagenes/yo2.jpg" alt="ejemplo imagen 1">
-                    </a>
+            <article>
+                <div class="title-section">
+                    <p>PROYECTOS</p>
                 </div>
-                <div class="card" data-static="Recursos/Imagenes/yo2.jpg" data-gif="Recursos/Imagenes/yo2.gif">
-                    <h3>DOCUMENTATION PAGE</h3>
-                    <p>DIABLOS</p>
-                    <div class="overlay">Ver más.</div>
-                    <img src="Recursos/Imagenes/yo2.jpg" alt="ejemplo imagen 1">
+
+
+                <div class="projects-grid">
+                    <div class="card" data-static="Recursos/Imagenes/yo2.jpg" data-gif="Recursos/Imagenes/yo2.gif">
+                        <div class="card-description">
+                            <h3>POKEDEX</h3>
+                            <p>Proyecto creado empleando consumo de apis y diseño reactivo con html css y js.</p>
+                        </div>
+
+                        <div class="card-preview">
+                            <div class="overlay">Ver más.</div>
+                            <a href="https://pokedexbrandon20.netlify.app/" target="_blank"><img
+                                    src="Recursos/Imagenes/yo2.jpg" alt="Vista previa de el sitio web"></a>
+                        </div>
+                    </div>
+
+
+                    <div class="card" data-static="Recursos/Imagenes/yo2.jpg" data-gif="Recursos/Imagenes/yo2.gif">
+                        <div class="card-description">
+                            <h3>Calculadora de propinas</h3>
+                            <p>Calcula la propina segun la cantidad de personas que consumieron y el porcentaje.</p>
+                        </div>
+
+                        <div class="card-preview">
+                            <div class="overlay">Ver más.</div>
+                            <a href="https://pokedexbrandon20.netlify.app/"><img src="Recursos/Imagenes/yo2.jpg"
+                                    alt="Vista previa de el sitio web"></a>
+                        </div>
+                    </div>
+
+
+                    <div class="card" data-static="Recursos/Imagenes/yo2.jpg" data-gif="Recursos/Imagenes/yo2.gif">
+                        <div class="card-description">
+                            <h3>Control de tiempo</h3>
+                            <p>Consumo de api de tiempo, la cual mostrara la ultima conexion (solo es un template)</p>
+                        </div>
+
+                        <div class="card-preview">
+                            <div class="overlay">Ver más.</div>
+                            <a href="https://proyectosfrontend.netlify.app/time-tracking-dashboard-main/"><img
+                                    src="Recursos/Imagenes/yo2.jpg" alt="Vista previa de el sitio web"></a>
+                        </div>
+                    </div>
+
+                    <div class="card" data-static="Recursos/Imagenes/yo2.jpg" data-gif="Recursos/Imagenes/yo2.gif">
+                        <div class="card-description">
+                            <h3>Otros proyectos</h3>
+                            <p>Haz clic para ver todos los proyectos en los que he trabajado!</p>
+                        </div>
+
+                        <div class="card-preview">
+                            <div class="overlay">Ver más.</div>
+                            <a href="https://proyectosfrontend.netlify.app/"><img src="Recursos/Imagenes/yo2.jpg"
+                                    alt="Vista previa de el sitio web"></a>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="card">
-                    <h3>ONSITE PAGE</h3>
-                    <p></p>
-                </div>
-                <div class="card">
-                    <h3>OTROS PROYECTOS INTERESANTES</h3>
-                    <p></p>
-                </div>
-            </div>
-            </div>
+            </article>
 
         </section>
+
         <section id="education" class="seccion">
-            <h2 class="title-section">EDUCACION</h2>
+            <article>
 
-            <div class="education-grid">
-                <div class="card">
-                    <h3>Ingenieria en sistemas</h3>
-                    <p>Universidad Mariano Galvez de Guatemala (2020 - Actualmente)</p>
-                    <a href="#" download="Certificado Html - Css Fibonacci"><button
-                            class="download">PROXIMAMENTE</button></a>
+                <div class="title-section">
+                    <p>EDUCACION</p>
                 </div>
 
-                <div class="card">
-                    <h3>Desarrollo de aplicaciones web con HTML y CSS</h3>
-                    <p>Academia fibonacci (Noviembre 2023 - Febrero 2024)</p>
-                    <a href="Recursos/Pdf/Certificado INTECAP ANDROID.pdf"
-                        download="Certificado Html - Css Fibonacci"><button class="download">DESCARGA MI
-                            CERTIFICADO</button></a>
-                </div>
-                <div class="card">
-                    <h3>Desarrollo de aplicaciones android + kotlin con Android Studio </h3>
-                    <p>Intecap (Agosto 2021 - Noviembre 2021)</p>
-                    <a href="Recursos/Pdf/Certificado HTML + CSS Academia Fibonacci.pdf"
-                        download="Certificado Html - Css Fibonacci"><button class="download">DESCARGA MI
-                            CERTIFICADO</button></a>
-                </div>
+                <div class="education-grid">
+                    <div class="card">
+                        <div class="card-description">
+                            <h3>Ingenieria en sistemas</h3>
+                            <p>Universidad Mariano Galvez de Guatemala (2020 - Actualmente)</p>
+                        </div>
+                        <a href="#" download="Certificado Html - Css Fibonacci"><button
+                                class="download">PROXIMAMENTE</button></a>
+                    </div>
 
-            </div>
+                    <div class="card">
+                        <div class="card-description">
+                            <h3>Desarrollo de aplicaciones web con HTML y CSS</h3>
+                            <p>Academia fibonacci (Noviembre 2023 - Febrero 2024)</p>
+                        </div>
+                        <a href="Recursos/Pdf/Certificado INTECAP ANDROID.pdf"
+                            download="Certificado Html - Css Fibonacci"><button class="download">DESCARGA</button></a>
+                    </div>
+                    <div class="card">
+                        <div class="card-description">
+                            <h3>Desarrollo de aplicaciones android con Android Studio </h3>
+                            <p>Intecap (Agosto 2021 - Noviembre 2021)</p>
+                        </div>
+                        <a href="Recursos/Pdf/Certificado INTECAP ANDROID.pdf"
+                            download="Certificado desarrollo movil"><button class="download">DESCARGA</button></a>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card-description">
+                            <h3>Desarrollo web con JavaScript</h3>
+                            <p>Edutin Academy (Julio 2024)</p>
+                        </div>
+                        <a href="Recursos/Pdf/Desarrollo web con JavaScript.pdf"
+                            download="Certificado JavaScript"><button class="download">DESCARGA</button></a>
+                    </div>
+
+                </div>
+            </article>
 
         </section>
+
         <section id="skills" class="seccion">
-            <h2 class="title-section">HABILIDADES</h2>
-            <h3 style="font-size: 30px; color: #910904; margin-bottom: 50px;">LENGUAJES DE PROGRAMACION Y SOFTWARE</h3>
+
+            <div class="title-section">
+                <p>HABILIDADES Y TECNOLOGIAS</p>
+            </div>
             <div class="lenguages">
                 <div class="icon">
                     <h3>HTML</h3>
@@ -146,11 +209,31 @@
                     <h3>FIGMA</h3>
                     <i class="fas fa-paint-brush"></i>
                 </div>
+
+                <div class="icon">
+                    <h3>MYSQL</h3>
+                    <i class="fas fa-database"></i>
+                </div>
+
+                <div class="icon">
+                    <h3>PHP</h3>
+                    <i class="fab fa-php"></i>
+                </div>
+
+                <div class="icon">
+                    <h3>REACT</h3>
+                    <i class="fab fa-react"></i>
+                </div>
+
             </div>
 
         </section>
         <section id="contact" class="seccion">
-            <h2 class="title-section">CONTACTO</h2>
+
+            <div class="title-section">
+                <p>CONTACTO</p>
+            </div>
+
             <h3>PUEDES CONTACTARME DE LA SIGUIENTE MANERA</h3>
             <div class="list-contact">
                 <div class="icon">
