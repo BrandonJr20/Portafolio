@@ -318,7 +318,6 @@ section:nth-of-type(odd) {
 
   .card-preview img{
     width: 100%;
-    height: fit-content;
     border-radius: 10px;
   }
 
